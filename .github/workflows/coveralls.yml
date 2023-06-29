@@ -17,7 +17,7 @@ jobs:
     - name: npm install, make test-coverage
       run: |
         npm install
-        npm run test
+        make test-coverage
 
     - name: Report Coveralls (Linux)
       if: startsWith(runner.os, 'Linux')
