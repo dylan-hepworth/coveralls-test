@@ -19,10 +19,10 @@ jobs:
         npm install
         npm run coveralls
 
-     - name: Coveralls
-      uses: coverallsapp/github-action@master
+    - name: Report Coveralls
+      uses: coverallsapp/github-action@v2
       with: 
-        github-token: "zQ6EdVPUExp4VFckDraqExdTbXlkW1YgI"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
 
 
 
