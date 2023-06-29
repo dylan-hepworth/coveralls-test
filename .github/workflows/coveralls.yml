@@ -2,8 +2,8 @@ on: [push, pull_request]
 
 name: Code Coverage Check
 uses: coverallsapp/github-action@v2
-  with:
-    github-token: ${{ github.token }}
+  # with:
+  #   github-token: ${{ github.token }}
     
 # jobs:
 #   test:
